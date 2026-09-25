@@ -17,9 +17,19 @@ p {
   margin: 0;
 }
 .container {
-  max-width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
+   outline: 2px solid red;
+  outline-offset: -2px;
+}
+@media only screen and (min-width: 1158px) {
+  .container {
+    padding: 0 15px;
+    max-width: 1158px;
+  }
+}
+.hide {
+  display: none;
 }
 ul,
 ol {

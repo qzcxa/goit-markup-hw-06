@@ -26,6 +26,11 @@
         <a href="./index.html" class="logo"
           ><span class="home-logo-part">WEB</span>STUDIO</a
         >
+        <button class="btn-menu-burger" type="button">
+          <svg class="btn-menu-burger-ill" width="24" height="24">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li class="main-nav-item">
@@ -39,15 +44,15 @@
             </li>
           </ul>
         </nav>
-        <address>
+        <address class="header-address">
           <ul class="address-list">
             <li>
-              <a href="mailto:info@devstudio.com" class="item-email"
+              <a href="mailto:info@devstudio.com" class="item-address"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a href="tel:+110001111111" class="item-tel"
+              <a href="tel:+110001111111" class="item-address"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -59,7 +64,7 @@
     <main>
       <section id="hero" class="hero">
         <div class="container">
-          <h1 class="hero-title">Effective&nbsp;Solutions for Your Business</h1>
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="btn" type="button">Order Service</button>
         </div>
       </section>
@@ -121,7 +126,7 @@
         </div>
       </section>
 
-      <section id="team" class="team">
+      <section id="team" class="team hide">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -364,7 +369,7 @@
           </ul>
         </div>
       </section>
-      <section id="portfolio" class="portfolio">
+      <section id="portfolio" class="portfolio hide">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -493,7 +498,7 @@
       </section>
     </main>
 
-    <footer id="footer" class="footer">
+    <footer id="footer " class="footer hide">
       <div class="container footer-container">
         <div class="footer-info">
           <a href="./index.html" class="footer-logo"
@@ -577,7 +582,99 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open" id="modal">
+
+    <div class="mobail-menu " id="mobail-menu">
+      <div class="mobail-menu-container">
+        <button class="mobail-btn" type="button">
+          <svg class="mobail-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+
+        <div class="nav-mobail">
+          <nav class="mobail-nav">
+            <ul class="mobail-nav-list">
+              <li class="mobail-nav-item">
+                <a href="#features" class="mobail-nav-link current">Features</a>
+              </li>
+              <li class="mobail-nav-item">
+                <a href="#team" class="mobail-nav-link">Team</a>
+              </li>
+              <li class="mobail-nav-item">
+                <a href="#portfolio" class="mobail-nav-link">Portfolio</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="address-mobail-container">
+          <address class="mobail-address">
+            <ul class="mobail-list">
+              <li class="mobail-address-item">
+                <a href="mailto:info@devstudio.com" class="mobail-item-address"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobail-address-item">
+                <a href="tel:+110001111111" class="mobail-item-address"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="mobail-social">
+          <ul class="mobail-list-icon">
+            <li class="mobail-item-icon">
+              <a
+                class="mobail-icon-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <svg class="mobail-icon" width="24" height="24">
+                  <use href="./images/icons.svg#illustration-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobail-item-icon">
+              <a
+                class="mobail-icon-link"
+                href="https://twitter.com/"
+                target="_blank"
+              >
+                <svg class="mobail-icon" width="24" height="24">
+                  <use href="./images/icons.svg#illustration-5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobail-item-icon">
+              <a
+                class="mobail-icon-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <svg class="mobail-icon" width="24" height="24">
+                  <use href="./images/icons.svg#illustration-6"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobail-item-icon">
+              <a
+                class="mobail-icon-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+              >
+                <svg class="mobail-icon" width="24" height="24">
+                  <use href="./images/icons.svg#illustration-7"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop hide" id="modal">
       <div class="modal">
         <button class="modal-btn" type="button">
           <svg class="modal-btn-icon" width="8" height="8">

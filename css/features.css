@@ -1,44 +1,111 @@
 .features {
   font-family: "Roboto", sans-serif;
-  padding: 120px 0;
+  padding: 96px 16px;
+}
+@media only screen and (min-width: 1158px) {
+  .features {
+    padding: 120px 15px;
+  }
 }
 .features-title {
 }
 .features-list {
   display: flex;
   gap: 24px;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .features-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .features-list {
+    
+  }
 }
 .features-item {
-  width: calc((100% - 24px * 3) / 4);
+  margin-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .features-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .features-item {
+    width: calc((100% - 24px * 3) / 4);
+  }
 }
 .features-item-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+
   color: #2e2f42;
+
   margin-bottom: 8px;
+
+  justify-content: center;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .features-item-title {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .features-item-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 .features-item-text {
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+
+  max-width: 288px;
 }
-.feature-wrapper{
-display: flex;
-align-items: center;
-justify-content: center;
 
-border: 1px solid #8e8f99;
-border-radius: 4px;
-background: #f4f4fd;
-margin-bottom: 8px;
-width: 264px;
-height: 112px;
+@media only screen and (min-width: 768px) {
+  .features-item-text {
+    max-width: 356px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .features-item-text {
+    font-weight: 400;
+    max-width: 264px;
+  }
+}
+.feature-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background: #f4f4fd;
+
 
 }
-.feature-icon{
-
+@media only screen and (max-width: 1157.98px) {
+  .feature-wrapper {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .feature-wrapper {
+   padding: 24px;  
+   margin-bottom: 8px; 
+  }
+}
+.feature-icon {
 }
