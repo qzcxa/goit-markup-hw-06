@@ -36,6 +36,11 @@
     row-gap: 72px;
   }
 }
+@media only screen and (min-width: 1158px) {
+  .portfolio-list {
+    row-gap: 48px;
+  }
+}
 .portfolio-item {
   box-shadow:
     0 1px 6px 0 rgba(46, 47, 66, 0.08),
