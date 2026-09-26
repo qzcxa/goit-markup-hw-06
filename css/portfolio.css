@@ -1,5 +1,10 @@
 .portfolio {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio {
+    padding: 120px 0;
+  }
 }
 .portfolio-container {
   display: flex;
@@ -12,6 +17,7 @@
 }
 .portfolio-title {
   margin-bottom: 72px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -26,7 +32,6 @@
   row-gap: 48px;
 }
 .portfolio-item {
-  width: calc((100% - 24px * 2) / 3);
   box-shadow:
     0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -34,6 +39,16 @@
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio-item {
+    width: calc((100% - 24px * 2) / 3);
+  }
 }
 .portfolio-item:hover {
   box-shadow:
@@ -44,6 +59,7 @@
 .portfolio-img {
   display: block;
   width: 100%;
+  height: auto;
 }
 .portfolio-item-text {
   font-weight: 400;
@@ -60,8 +76,6 @@
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.portfolio-content {
-}
 .portfolio-thumb {
   position: relative;
   overflow: hidden;
@@ -73,8 +87,7 @@
   top: 0;
   left: 0;
   padding: 40px 32px;
-
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
 
@@ -86,7 +99,15 @@
   transform: translateY(100%);
   transition: 250ms ease-out;
   transition-property: transform;
+
+  font-size: 12px;
 }
+@media only screen and (min-width: 768px) {
+  .overlay {
+    font-size: 16px;
+  }
+}
+
 .portfolio-item:hover .overlay {
   transform: translateY(0);
 }

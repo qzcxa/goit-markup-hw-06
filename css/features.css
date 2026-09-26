@@ -22,7 +22,6 @@
 }
 @media only screen and (min-width: 1158px) {
   .features-list {
-    
   }
 }
 .features-item {
@@ -93,8 +92,6 @@
   border: 1px solid #8e8f99;
   border-radius: 4px;
   background: #f4f4fd;
-
-
 }
 @media only screen and (max-width: 1157.98px) {
   .feature-wrapper {
@@ -103,8 +100,8 @@
 }
 @media only screen and (min-width: 1158px) {
   .feature-wrapper {
-   padding: 24px;  
-   margin-bottom: 8px; 
+    padding: 24px;
+    margin-bottom: 8px;
   }
 }
 .feature-icon {
