@@ -35,7 +35,7 @@
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
-
+max-width: 288px;
   width: 90%;
 }
 @media only screen and (min-width: 768px) {

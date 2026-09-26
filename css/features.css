@@ -11,7 +11,7 @@
 }
 .features-list {
   display: flex;
-  gap: 24px;
+  gap: 72px 24px;
   flex-direction: column;
 }
 @media only screen and (min-width: 768px) {
@@ -24,9 +24,7 @@
   .features-list {
   }
 }
-.features-item {
-  margin-bottom: 72px;
-}
+
 @media only screen and (min-width: 768px) {
   .features-item {
     width: calc((100% - 24px) / 2);
@@ -60,6 +58,7 @@
   .features-item-title {
     font-size: 20px;
     line-height: 1.2;
+    font-weight: 500;
   }
 }
 .features-item-text {
