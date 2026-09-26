@@ -44,6 +44,7 @@
   color: #fff;
 }
 
+
 @media only screen and (min-width: 768px) {
   .hero-title {
     max-width: 496px;
