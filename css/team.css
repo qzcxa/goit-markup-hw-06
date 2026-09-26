@@ -21,23 +21,28 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  gap: 72px; 
+  gap: 72px;
   background: #f4f4fd;
 }
 @media only screen and (min-width: 768px) {
   .team-list {
-    gap: 64px 24px ;
+    gap: 64px 24px;
   }
 }
 .team-item {
   background: #fff;
   border-radius: 0 0 4px 4px;
   overflow: hidden;
-
+  max-width: 264px;
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+@media only screen and (min-width: 768px) {
+  .team-item  {
+    width: calc((100% - 24px) / 2);
+  }
 }
 @media only screen and (min-width: 1158px) {
   .team-item {
